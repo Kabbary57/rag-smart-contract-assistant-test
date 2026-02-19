@@ -1,0 +1,45 @@
+# ── Core LangChain ────────────────────────────────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+
+# ── LLM Providers (install the ones you need) ─────────────────────────────────
+openai>=1.0.0                        # For OpenAI GPT models
+# langchain-nvidia-ai-endpoints>=0.1.0 # Uncomment for NVIDIA NIM
+# transformers>=4.40.0               # Uncomment for HuggingFace local models
+# torch>=2.0.0                       # Uncomment for HuggingFace local models
+
+# ── Embeddings ────────────────────────────────────────────────────────────────
+sentence-transformers>=2.6.0         # Offline embedding fallback
+
+# ── Vector Stores ─────────────────────────────────────────────────────────────
+faiss-cpu>=1.7.4                     # FAISS (default)
+# chromadb>=0.5.0                    # Uncomment for Chroma
+
+# ── Document Parsing ──────────────────────────────────────────────────────────
+PyMuPDF>=1.24.0                      # PDF parsing (fast)
+pdfplumber>=0.11.0                   # PDF parsing fallback (tables)
+python-docx>=1.1.0                   # DOCX parsing
+
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+python-multipart>=0.0.9              # File upload support
+
+# ── UI ────────────────────────────────────────────────────────────────────────
+gradio>=4.30.0
+
+# ── LangServe (optional) ──────────────────────────────────────────────────────
+# langserve[all]>=0.2.0              # Uncomment to enable LangServe routes
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+numpy>=1.26.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+rich>=13.0.0                         # Pretty console output
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
